@@ -7,11 +7,11 @@ variable "AMI_ID" {
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
-  default = "levelup_key"
+  default = "../levelup_key"
 }
 
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "levelup_key.pub"
+  default = "../levelup_key.pub"
 }
 
 variable "INSTANCE_TYPE" {
