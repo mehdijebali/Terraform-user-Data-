@@ -1,0 +1,14 @@
+./UserData_CloudInit/terraform.tfvars
+./UserData_CloudInit/.terraform
+./UserData_CloudInit/.terraform.lock.hcl
+./UserData_CloudInit/terraform.tfstate
+./UserData_CloudInit/terraform.tfstate.backup
+
+./UserData_Script/terraform.tfvars
+./UserData_Script/.terraform
+./UserData_Script/.terraform.lock.hcl
+./UserData_Script/terraform.tfstate
+./UserData_Script/terraform.tfstate.backup
+
+levelup_key
+levelup_key.pub
