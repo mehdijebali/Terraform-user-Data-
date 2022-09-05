@@ -6,9 +6,9 @@ resource "aws_key_pair" "levelup_key" {
 
 #Create AWS Instance
 resource "aws_instance" "MyFirstInstnace" {
-  ami           = lookup(var.AMIS, var.AWS_REGION)
-  instance_type = "t2.micro"
-  availability_zone = "us-east-2a"
+  ami           = var.AMI_ID
+  instance_type = var.INSTANCE_TYPE
+  availability_zone = var.AVAILABILITY_ZONE
   key_name      = aws_key_pair.levelup_key.key_name
 
   user_data = data.template_cloudinit_config.install-apache-config.rendered
