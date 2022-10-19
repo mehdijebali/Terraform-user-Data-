@@ -34,3 +34,6 @@ terraform plan
 ```
 terraform apply
 ```
+## Expected Results
+After the provisionning is done, we can verify the Apache deployment by copying the instance public IP to the browser. You should find a webpage similar to the following
+![](./Lab_Results/user_data_script.png)
