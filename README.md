@@ -9,7 +9,7 @@ By default, user data scripts and cloud-init directives run only during the firs
 ## Instructions
 1. Clone the project 
 ```
-git clone https://github.com/mehdijebali/Terraform-EBS.git.git
+git clone https://github.com/mehdijebali/Terraform-user-Data-.git
 ```
 2. In the project root directory, create an SS key and name it **levelup_key**
 ```
@@ -35,5 +35,5 @@ terraform plan
 terraform apply
 ```
 ## Expected Results
-After the provisionning is done, we can verify the Apache deployment by copying the instance public IP to the browser. You should find a webpage similar to the following
+After the provisionning is done, we can verify the Apache deployment by copying the instance public IP to the browser. You should find a webpage similar to the following:
 ![](./Lab_Results/user_data_script.png)
