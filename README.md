@@ -1,5 +1,6 @@
 # Provision EC2 Instance with User Data 
-In this Lab, we will automate the deployment of EC2 instance using user data, we will try to install apache by two methods: **Cloudinit** and **Script**.
+In this Lab, we will automate the deployment of EC2 instance using user data, we will try to install apache by two methods: **Cloudinit** and **Script**. The following diagram describes the provisionned infrastructure:
+![](./Lab_Results/user_data.png)
 ## About User Data
 In AWS, user have option to pass user data to the instance at launch. In fact, we can pass two types of user data to Amazon EC2: shell scripts and cloud-init directives.
 
