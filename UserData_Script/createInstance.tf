@@ -1,6 +1,6 @@
 
 resource "aws_key_pair" "levelup_key" {
-    key_name = "levelup_key"
+    key_name = var.KEY_NAME
     public_key = file(var.PATH_TO_PUBLIC_KEY)
 }
 
@@ -15,7 +15,7 @@ resource "aws_instance" "MyFirstInstnace" {
   user_data = file("installapache.sh")
 
   tags = {
-    Name = "custom_instance"
+    Name = "${var.INSTANCE_NAME}"
   }
 }
 

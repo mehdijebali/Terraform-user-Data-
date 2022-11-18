@@ -29,3 +29,15 @@ variable "SG_NAME" {
 variable "SG_DESCRIPTION" {
   default = "security group that allows ssh connection"
 }
+
+variable "INSTANCE_TYPE" {
+  default = "t2.micro"
+}
+
+variable "KEY_NAME" {
+  default = "levelup_key"
+}
+
+variable "INSTANCE_NAME" {
+  default = "custom_instance"
+}
