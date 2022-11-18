@@ -1,5 +1,11 @@
+#Get default VPC
+data "aws_vpc" "default" {
+  default = true
+} 
+
 #Security Group for levelupvpc
 resource "aws_security_group" "allow-levelup-ssh" {
+  vpc_id      = data.aws_vpc.default.id
   name        = var.SG_NAME
   description = var.SG_DESCRIPTION
 
