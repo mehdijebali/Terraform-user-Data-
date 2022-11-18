@@ -21,3 +21,11 @@ variable "INSTANCE_TYPE" {
 variable "AVAILABILITY_ZONE" {
   default = "us-east-1a"
 }
+
+variable "SG_NAME" {
+  default = "allow-levelup-ssh"
+}
+
+variable "SG_DESCRIPTION" {
+  default = "security group that allows ssh connection"
+}
